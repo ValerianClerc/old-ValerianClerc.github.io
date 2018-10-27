@@ -1,0 +1,29 @@
+html, body {
+    background:#4627a5 ;
+}
+
+#main {
+    margin: 10% 15%;
+    padding: 5%;
+    background:#efedf7 ;
+    border-radius: 1%;
+    display: flex
+}
+
+#tabs {
+    justify-content: flex-end;
+}
+
+#tabs p {
+    padding: 10px;
+    border: 2px solid #402496;
+    margin: 2px;
+    display: inline;
+}
+
+img {
+    justify-content: flex-end;
+    width: 20%;
+    border: 5px solid #402496;
+    border-radius: 20%;
+}
