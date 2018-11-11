@@ -2,28 +2,41 @@ html, body {
     background:#4627a5 ;
 }
 
-#main {
+.center {
     margin: 10% 15%;
     padding: 5%;
     background:#efedf7 ;
     border-radius: 1%;
-    display: flex
 }
 
-#tabs {
-    justify-content: flex-end;
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: 100px 300px; */
 }
 
-#tabs p {
+.title {
+    /* display: inline-grid; */
+    border: 3px solid red;
+}
+
+.tab-container {
+    /* display: inline-grid; */
+    border: 3px solid pink;
+}
+
+.tab {
     padding: 10px;
     border: 2px solid #402496;
     margin: 2px;
-    display: inline;
+}
+
+.main-image {
+    width: 20%;
+    /* display: inline-grid; */
 }
 
 img {
-    justify-content: flex-end;
-    width: 20%;
     border: 5px solid #402496;
     border-radius: 20%;
 }
