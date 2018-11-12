@@ -1,4 +1,5 @@
 html, body {
+    font-family: 'Lato', sans-serif;
     background:#4627a5 ;
 }
 
@@ -7,6 +8,11 @@ html, body {
     padding: 5%;
     background:#efedf7 ;
     border-radius: 1%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .header {
@@ -30,10 +36,9 @@ html, body {
     border: 2px solid #402496;
     margin: 2px;
 }
-
-.main-image {
-    width: 20%;
-    /* display: inline-grid; */
+.main-image img{
+    max-width: 100%;
+    height: auto;
 }
 
 img {
