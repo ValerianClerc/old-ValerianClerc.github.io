@@ -15,6 +15,11 @@ html, body {
     grid-template-columns: 50% 50%;
 }
 
+.content {
+    padding: 5%;
+    font-size: 1.7em;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -22,19 +27,22 @@ html, body {
 }
 
 .title {
-    /* display: inline-grid; */
+    font-size: 1.5em;
     border: 3px solid red;
 }
 
 .tab-container {
-    /* display: inline-grid; */
+    display: flex;
     border: 3px solid pink;
+    justify-content: space-around;
 }
 
 .tab {
-    padding: 10px;
+    height: 38px;
+    padding: 20px;
     border: 2px solid #402496;
     margin: 2px;
+    font-size: 2em;
 }
 .main-image img{
     max-width: 100%;
