@@ -1,6 +1,9 @@
 html, body {
     font-family: 'Lato', sans-serif;
-    background:#4627a5 ;
+    /* background:#a08fff ; */
+    background-color: #8d73ff;
+    background-image: url(clean-gray-paper.png);
+    min-width: 1100px;
 }
 
 .center {
@@ -8,6 +11,16 @@ html, body {
     padding: 5%;
     background:#efedf7 ;
     border-radius: 1%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-box-shadow: 3px 3px 18px 3px #4627a5;
+    box-shadow: 3px 3px 18px 3px #4627a5;
+
 }
 
 .main {
