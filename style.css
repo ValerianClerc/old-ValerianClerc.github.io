@@ -3,24 +3,33 @@ html, body {
     /* background:#a08fff ; */
     background-color: #8d73ff;
     background-image: url(clean-gray-paper.png);
-    min-width: 1300px;
+    min-width: 1500px;
+}
+html {
+    /* background: white; */
 }
 
-h1 {
-    padding: 0;
-    text-shadow: 0 1px 0 #ccc,
-                 0 2px 0 #c9c9c9,
-                 0 3px 0 #bbb,
-                 0 4px 0 #b9b9b9,
-                 0 5px 0 #aaa,
-                 0 6px 1px rgba(0,0,0,.1),
-                 0 0 5px rgba(0,0,0,.1),
-                 0 1px 3px rgba(0,0,0,.3),
-                 0 3px 5px rgba(0,0,0,.2),
-                 0 5px 10px rgba(0,0,0,.25),
-                 0 10px 10px rgba(0,0,0,.2),
-                 0 20px 20px rgba(0,0,0,.15);
-    color: #f6f4ff;
+body {
+    z-index: 1;
+}
+body h1 {
+    opacity: 0.7;
+    font-family: 'Oswald', sans-serif;
+    background-color: #693ace;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    /* text-shadow: 6px 6px 0px rgba(0,0,0,0.2); */
+    font-size: 6em;
+    overflow: visible;
+    min-width: 500px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    margin:0;
+    z-index: 2;
   }
 
 .center {
@@ -37,7 +46,7 @@ h1 {
     text-overflow: ellipsis;
     -webkit-box-shadow: 3px 3px 18px 3px #4627a5;
     box-shadow: 3px 3px 18px 3px #4627a5;
-
+    z-index: 3;
 }
 
 .main {
