@@ -111,6 +111,15 @@ transition:800ms ease all;
 }
 
 img {
-    border: 5px solid #402496;
+    border: 5px solid #583fa3;
     border-radius: 20%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-box-shadow: 2px 2px 18px 2px #cbb9ff;
+    box-shadow: 2px 2px 18px 2px #ddd2ff;
+
 }
