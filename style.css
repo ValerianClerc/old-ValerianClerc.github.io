@@ -81,15 +81,15 @@ body h1 {
 
 img {
     border: 5px solid #583fa3;
-    border-radius: 20%;
+    border-radius: 5%;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     text-align: center;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    -webkit-box-shadow: 2px 2px 18px 2px #cbb9ff;
-    box-shadow: 2px 2px 18px 2px #ddd2ff;
+    -webkit-box-shadow: 3px 3px 18px 3px #a285f8;
+    box-shadow: 3px 3px 18px 3px #b39afd;
 
 }
 
@@ -109,6 +109,7 @@ img {
     border-bottom: solid 5px #6a57a5;/*daker than background*/
     border-right: solid 5px #7962bd;/*darker than background*/
     margin: 10px;
+    border-radius: 2.5%;
 }
 
 .square_btn:before{    
@@ -148,3 +149,63 @@ img {
 .square_btn:active:before {/*on click*/
     content: none;/*Border disappears*/
 }
+
+.wrapper {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+.wrapper i {
+    margin: 13px;
+}
+
+.wrapper i:nth-child(1) {
+    color: #483386;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(1):hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
+
+.wrapper i:nth-child(2) {
+    color: #483386;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(2):hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
+
+.wrapper i:nth-child(3) {
+    color: #483386;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: all ease-in-out 150ms;
+}
+
+.wrapper i:nth-child(3):hover {
+    margin-top: -10px;
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    transform: translate(0, -5);
+}
+.wrapper i:nth-child(4) {
+    color: #483386;
+    cursor: pointer;
+    text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease-in-out 150ms;
+}
+.wrapper i:nth-child(4):hover {
+    margin-top: -10px;
+    text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+    transform: translate(0, -8);
+}
+
