@@ -60,59 +60,19 @@ body h1 {
 }
 
 .header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    /* grid-template-rows: 100px 300px; */
-}
+    font-family: 'Oswald', sans-serif;
 
-.title {
-    font-size: 1.5em;
 }
 
 .tab-container {
-    display: flex;
-    justify-content: space-around;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 
-.tab{
-    margin: 2px;
-    background: #8c72da;
-    color:#efedf7 ;
-    border:none;
-    position:relative;
-    height:30px;
-    font-size:1.6em;
-    padding: 20px 2em;
-    cursor:pointer;
-    transition:800ms ease all;
-    outline:none;
-}
-.tab:hover{
-    background:#efedf7 ;
-    color:#402496;
-}
-.tab:before,.tab:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
-    background: #402496;
-    transition:400ms ease all;
-}
-.tab:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
-}
-.tab:hover:before,.tab:hover:after{
-width:100%;
-transition:800ms ease all;
-}
 
 .main-image img{
     max-width: 100%;
@@ -131,4 +91,60 @@ img {
     -webkit-box-shadow: 2px 2px 18px 2px #cbb9ff;
     box-shadow: 2px 2px 18px 2px #ddd2ff;
 
+}
+
+.square_btn{
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    font-size: 2em;
+    display: inline-block;
+    position: relative;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    background: #8c72da;/*Button Color*/
+    color: #efedf7;
+    border-bottom: solid 5px #6a57a5;/*daker than background*/
+    border-right: solid 5px #7962bd;/*darker than background*/
+    margin: 10px;
+}
+
+.square_btn:before{    
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-width: 0 6px 6px 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color:  #efedf7;
+}
+
+.square_btn:after{   
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-width: 0px 6px 6px 0px;
+    border-style: solid;
+    border-color: #efedf7;
+    border-bottom-color: transparent;
+}
+
+.square_btn:active{ /*on click*/
+    border:none;
+    -ms-transform: translate(6px,6px);
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);/*move LowerRight*/
+}
+
+.square_btn:active:after,
+.square_btn:active:before {/*on click*/
+    content: none;/*Border disappears*/
 }
